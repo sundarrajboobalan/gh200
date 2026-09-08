@@ -1,5 +1,5 @@
 name: GH200 Demo
-on: workflow_dispatch
+on: push
 jobs:
   first-job:
     runs-on: windows-2022
