@@ -10,7 +10,7 @@ jobs:
         run: echo "Done - bye!"
   second-job:
     # needs: first-job
-    runs-on: macos-13
+    runs-on: ubuntu-22.04
     steps:
       - name: Print greeting
         run: echo "Hello World!"
