@@ -2,7 +2,7 @@ name: GH200 Demo
 on: push
 jobs:
   first-job:
-    runs-on: windows-2022
+    runs-on: self-hosted
     steps:
       - name: Print greeting
         run: echo "Hello World!"
@@ -10,7 +10,7 @@ jobs:
         run: echo "Done - bye!"
   second-job:
     needs: first-job
-    runs-on: ubuntu-22.04
+    runs-on: self-hosted
     steps:
       - name: Print greeting
         run: echo "Hello World!"
